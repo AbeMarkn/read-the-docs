@@ -4,5 +4,7 @@
 
 ## command
 
-docker run -it -v $(pwd)/docs sphinxdoc/sphinx sphinx-quickstart
+~~~
+docker run -it -v $(pwd):/docs sphinxdoc/sphinx sphinx-quickstart
 docker run -v $(pwd):/docs sphinxdoc/sphinx sphinx-build /docs/source /docs/build
+~~~
